@@ -1,0 +1,4 @@
+library(readr)
+library(ggplot2)
+data <- read_csv("https://huggingface.co/datasets/maharshipandya/spotify-tracks-dataset/resolve/main/train.csv")
+
