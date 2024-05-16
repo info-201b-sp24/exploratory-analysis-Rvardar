@@ -1,7 +1,7 @@
 library(readr)
 library(ggplot2) 
 
-dataset <- read_csv("https://github.com/info-201b-sp24/exploratory-analysis-Rvardar/blob/main/1.csv")
+dataset <- read.csv("https://github.com/info-201b-sp24/exploratory-analysis-Rvardar/blob/main/1.csv")
 
 bar_plot <- ggplot(dataset, aes(x = reorder(artist_name, popularity), y = popularity)) +
   geom_bar(stat = "identity", fill = "skyblue") +
