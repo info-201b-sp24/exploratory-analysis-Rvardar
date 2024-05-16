@@ -1,7 +1,7 @@
 
 library(readr) 
 library(ggplot2) 
-dataset <- read_csv("https://github.com/info-201b-sp24/exploratory-analysis-Rvardar/edit/main/dataset.csv")
+dataset <- read_csv("https://github.com/info-201b-sp24/exploratory-analysis-Rvardar/blob/main/dataset.csv")
 
 scatter_plot <- ggplot(dataset, aes(x = danceability, y = energy)) +
   geom_point() +
