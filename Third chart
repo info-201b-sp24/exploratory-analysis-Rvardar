@@ -3,7 +3,7 @@ library(dplyr)
 library(ggplot2) 
 
 url <- "https://raw.githubusercontent.com/info-201b-sp24/exploratory-analysis-Rvardar/main/dataset.csv"
-dataset <- read_csv(url)
+dataset <- read.csv(url)
 
 genre_time_signature <- dataset %>%
   group_by(genre, time_signature) %>%
